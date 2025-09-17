@@ -250,6 +250,33 @@ adb shell dumpsys gfxinfo com.giolaq.rntv framestats
 - Test on multiple screen resolutions
 - Ensure safe area compliance
 
+## 🤖 AI-Assisted Conversion
+
+### Using conversion.md as LLM Context
+
+The `conversion.md` file is designed to be used as context for Large Language Models (LLMs) to guide automated conversion:
+
+```bash
+# Use conversion.md as context when prompting your LLM
+cat conversion.md | pbcopy  # Copy to clipboard (macOS)
+```
+
+**Recommended LLM Workflow:**
+1. **Load Context**: Provide `conversion.md` as system context to your LLM
+2. **Analyze Source**: Share your Android TV code with the LLM
+3. **Generate Components**: Ask the LLM to create React Native TV equivalents
+4. **Iterate**: Use the debugging process from the guide to refine results
+
+**Example LLM Prompt:**
+```
+Using the TVChameleon conversion methodology as context, convert this Android TV 
+CardPresenter to a React Native TV component with pixel-perfect responsive design:
+
+[Your Android TV code here]
+```
+
+This approach leverages the comprehensive methodology to ensure consistent, high-quality conversions.
+
 ## 📚 Additional Resources
 
 - **[conversion.md](./conversion.md)** - Complete conversion methodology
