@@ -1,4 +1,16 @@
-# Android TV to React Native TV Conversion Project
+# TVChameleon 🦎
+
+```
+████████╗██╗   ██╗ ██████╗██╗  ██╗ █████╗ ███╗   ███╗███████╗██╗     ███████╗ ██████╗ ███╗   ██╗
+╚══██╔══╝██║   ██║██╔════╝██║  ██║██╔══██╗████╗ ████║██╔════╝██║     ██╔════╝██╔═══██╗████╗  ██║
+   ██║   ██║   ██║██║     ███████║███████║██╔████╔██║█████╗  ██║     █████╗  ██║   ██║██╔██╗ ██║
+   ██║   ╚██╗ ██╔╝██║     ██╔══██║██╔══██║██║╚██╔╝██║██╔══╝  ██║     ██╔══╝  ██║   ██║██║╚██╗██║
+   ██║    ╚████╔╝ ╚██████╗██║  ██║██║  ██║██║ ╚═╝ ██║███████╗███████╗███████╗╚██████╔╝██║ ╚████║
+   ╚═╝     ╚═══╝   ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝
+
+                    🦎 Adapting Android TV apps to React Native TV 🦎
+                         Seamless cross-platform transformation
+```
 
 A comprehensive demonstration of converting native Android TV applications to React Native TV, featuring pixel-perfect UI recreation and responsive design principles.
 
@@ -10,7 +22,7 @@ This repository showcases the complete conversion process from a native Android 
 
 - **`MyApplication/`** - Original Android TV app (Java/Kotlin + Leanback)
 - **`rntv/`** - Converted React Native TV app (TypeScript + Expo)
-- **`android-mcp-server/`** - Python MCP server for Android device automation
+- **`android-mcp-server/`** - Python MCP server for Android device automation (uses [android-mcp-server](https://github.com/minhalvp/android-mcp-server))
 - **`conversion.md`** - Comprehensive conversion methodology guide
 
 ## 🚀 Quick Start
@@ -35,9 +47,9 @@ cd convai
 ```bash
 # macOS with Homebrew
 brew install openjdk@17
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home
 
-# Or use your preferred Java 17 installation
+# Or use your preferred JDK 17 installation
 ```
 
 3. **Setup Android TV device/emulator:**
@@ -92,6 +104,8 @@ adb shell am start -n com.giolaq.rntv/.MainActivity
 
 1. **Setup MCP server for automated testing:**
 ```bash
+# Clone the Android MCP server
+git clone https://github.com/minhalvp/android-mcp-server.git
 cd android-mcp-server/
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
@@ -265,7 +279,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **Java Version Error:**
 ```bash
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home
 ```
 
 **ADB Connection Issues:**
