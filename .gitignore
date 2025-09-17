@@ -1,0 +1,117 @@
+# Android TV to React Native TV Conversion Project
+# .gitignore
+
+# ===== ANDROID TV (MyApplication/) =====
+MyApplication/.gradle/
+MyApplication/.idea/
+MyApplication/build/
+MyApplication/app/build/
+MyApplication/local.properties
+MyApplication/*.iml
+MyApplication/.DS_Store
+MyApplication/captures/
+MyApplication/.externalNativeBuild/
+MyApplication/.cxx/
+
+# ===== REACT NATIVE TV (rntv/) =====
+# Dependencies
+rntv/node_modules/
+rntv/.pnp
+rntv/.pnp.js
+
+# Expo
+rntv/.expo/
+rntv/dist/
+rntv/web-build/
+
+# Native
+rntv/ios/
+rntv/android/app/build/
+rntv/android/.gradle/
+rntv/android/build/
+rntv/android/gradle/
+rntv/android/gradlew*
+rntv/android/local.properties
+
+# Metro
+rntv/.metro-health-check*
+
+# Debug
+rntv/npm-debug.*
+rntv/yarn-debug.*
+rntv/yarn-error.*
+
+# ===== ANDROID MCP SERVER =====
+android-mcp-server/.venv/
+android-mcp-server/__pycache__/
+android-mcp-server/*.egg-info/
+android-mcp-server/.python-version
+android-mcp-server/config.yaml
+android-mcp-server/screenshot*.png
+android-mcp-server/window_dump.xml
+
+# ===== GENERAL =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Screenshots and recordings
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mov
+
+# Temporary files
+*.tmp
+*.temp
